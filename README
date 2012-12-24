@@ -1,0 +1,17 @@
+Bicubic Interpolator (Multithreaded)
+
+Pre-requisites:
+---------------
+a) An x86 processor running Linux
+b) OpenGL development headers (GL/gl.h) in /usr/include (SOIL library used for image loading has OpenGL dependencies despite this program not using any OpenGL)
+c) Posix threads (pThreads)
+
+Building:
+---------
+Simply run 'make'
+
+Running:
+--------
+Usage: ./BicubicInterpolator inputImagePath newWidth newHeight
+Example: ./BicubicInterpolator inputImage.png  1230 820
+NOTE: Use only absolute paths for images or images in the same directory as executable.
